@@ -17,7 +17,7 @@ function App() {
             <h1>Login</h1>
           </Route>
 
-          {/* Default Reoute */}
+          {/* Default Route */}
           <Route path="/">
             <Header />
             <h1>Home</h1>
