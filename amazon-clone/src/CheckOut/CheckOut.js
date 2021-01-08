@@ -1,0 +1,47 @@
+import ShoppingBasket from '@material-ui/icons/ShoppingBasket'
+import React from 'react'
+import { useStateValue } from '../StateProvider'
+import './CheckOut.css'
+
+function CheckOut() {
+    const [{ basket }] = useStateValue();
+    return (
+        <div className="checkout">
+            <img
+                className="checkout__ad"
+                src="https://images-na.ssl-images-amazon.com/images/G/02/AmazonBusinessPayments/AB/ILM/Triton/422-sbcc-onsite-ilm-d-2-uk-1300x90._CB414951906_.png" />
+            {basket?.length === 0 ? (
+                <div className="checkout__empty">
+
+                    <img src="https://m.media-amazon.com/images/G/02/cart/empty/kettle-desaturated._CB424695504_.svg"></img>
+
+                    <div className="checkout__infoWrap">
+
+                        <h2>Your Amazon Basket is empty.</h2>
+
+                        <a href="/">Shop today's deals</a>
+
+                        <a href="/" className="checkout__button">Shop today's deals</a>
+
+                    </div>
+
+
+                </div>
+            ) : (
+                    <div className="checkout__items">
+                        <h2 className="checkout__title">Your Shopping Basket</h2>
+
+                        {}
+                    </div>
+                )}
+
+            <p>The price and availability of items at Amazon.co.uk are subject to change. The shopping basket is a temporary place to store a list of your items and reflects each item's most recent price.</p>
+
+            <p>Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.
+
+</p>
+        </div >
+    )
+}
+
+export default CheckOut;
