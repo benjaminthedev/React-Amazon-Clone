@@ -1,4 +1,14 @@
+.checkout{
+    display: flex;
+    background: #fff;
+    height:max-content;
+    flex-wrap: wrap;
+}
 
+.checkout__items{
+    width: 100%;
+    padding: 40px;
+}
 
 .checkout__ad{
     width: 100%;
