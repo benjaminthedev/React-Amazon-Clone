@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header/Header'
-import Home from './Home';
+import Header from '../Header/Header'
+import Home from '../Home/Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import CheckOut from './CheckOut/CheckOut'
+import CheckOut from '../CheckOut/CheckOut'
 
 import './App.css';
 
