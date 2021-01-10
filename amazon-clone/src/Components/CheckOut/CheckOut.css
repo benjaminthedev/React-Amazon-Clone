@@ -10,6 +10,7 @@
 .checkout__left{
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
 }
 
 .checkout__right {
@@ -38,9 +39,20 @@
     background-color: #f0c14b;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    height: 30px;
+    
  }
 
  .checkout__infoWrap{
      display: flex;
      flex-direction: column;
  }
+
+ .checkout__terms {
+    padding: 20px 50px;
+    
+    
+    font-size: 13px;
+    text-align: center;
+        background-color: rgb(234,237,237);
+}
