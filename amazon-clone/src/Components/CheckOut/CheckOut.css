@@ -1,8 +1,19 @@
+.checkout__wrapper{
+    background: #fff;
+}
 .checkout{
     display: flex;
     background: #fff;
     height:max-content;
+}
+
+.checkout__left{
+    display: flex;
     flex-wrap: wrap;
+}
+
+.checkout__right {
+    padding: 20px;
 }
 
 .checkout__items{
@@ -13,6 +24,7 @@
 .checkout__ad{
     width: 100%;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .checkout__empty{
