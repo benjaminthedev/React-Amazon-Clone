@@ -1,37 +1,12 @@
 export const initalState = {
-    basket: [{
-        id: '987654545654367',
-        title: 'This is a very very long title for a product',
-        price: 9.99,
-        rating: 5,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/5179mAwVxBL._AC_SX679_.jpg'
-    },
-    {
-        id: '9876212154567',
-        title: 'This is a very very long title for a product',
-        price: 9.99,
-        rating: 5,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/5179mAwVxBL._AC_SX679_.jpg'
-    },
-    {
-        id: '9876545698765437',
-        title: 'This is a very very long title for a product',
-        price: 9.99,
-        rating: 5,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/5179mAwVxBL._AC_SX679_.jpg'
-    },
-    {
-        id: '98765434232453213456765432567',
-        title: 'This is a very very long title for a product',
-        price: 9.99,
-        rating: 5,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/5179mAwVxBL._AC_SX679_.jpg'
-    }],
+    basket: [],
     user: null,
 }
 
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.price + amount, 0);
+
 const reducer = (state, action) => {
-    console.log(action);
     switch (action.type) {
         case 'ADD_TO_BASKET':
             //Logic for adding items to the basket

@@ -8,7 +8,7 @@
     z-index: 1;
     align-items: center;
     padding: 20px;
-    min-height: 300px;
+    min-height: 325px;
 }
 .product__info{
     height: 100px;
@@ -34,4 +34,6 @@
     background-color: #f0c14b;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    height: 30px;
+    margin-bottom: 20px;
 }
