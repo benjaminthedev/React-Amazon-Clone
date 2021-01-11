@@ -22,7 +22,7 @@ function CheckOut() {
                             <img src="https://m.media-amazon.com/images/G/02/cart/empty/kettle-desaturated._CB424695504_.svg" />
                             <div className="checkout__infoWrap">
                                 <h2>Your Amazon Basket is empty.</h2>
-                                <a href="/">Shop today's deals</a>
+                                <p>Find some great deals today!</p>
                                 <a href="/" className="checkout__button">Shop today's deals</a>
                             </div>
                         </div>
